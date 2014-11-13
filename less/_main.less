@@ -179,13 +179,21 @@ p {
 	}
 }
 .head-menu {
-	margin:0 0 10px -20px;
-	padding:0;
+	margin:0 0 0 -15px;
+	padding:0 0 10px;
 	list-style:none;
-	display: table;
-	width: 100%;
+	// display: table;
+	// width: 100%;
+	position: relative;
+	&:after{
+		display:block;
+		clear:both;
+		content:'';
+	}
 	li {
-		display: table-cell;
+		// display: table-cell;
+		float: left;
+		margin: 0 8px 0 0;
 		vertical-align: middle;
 		padding: 10px 0 0;
 		&.active a {

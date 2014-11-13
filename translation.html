@@ -7,6 +7,9 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/icheck.min.js"></script>
 	<script type="text/javascript" src="js/select-1.1.0.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<!--[if lte IE 8]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
 	<!--[if gte IE 9]>
@@ -90,18 +93,18 @@
 		</div>
 		<div class="main-content">
 			<div class="container">
-				<div class="clear">
-					<aside class="aside">
+				<div class="clear stick-parent">
+					<aside class="aside stick">
 						<ul class="side-menu">
-							<li><a href="#">Рабочие языки </a></li>
-							<li><a href="#">Специализация в переводе</a></li>
-							<li><a href="#">Сложность тематики</a></li>
-							<li><a href="#">Как происходит работа с вашим заказом</a></li>
-							<li><a href="#">Цены</a></li>
+							<li class="active"><a href="#container1">Рабочие языки </a></li>
+							<li><a href="#container2">Специализация в переводе</a></li>
+							<li><a href="#container3">Сложность тематики</a></li>
+							<li><a href="#container4">Как происходит работа с вашим заказом</a></li>
+							<li><a href="#container5">Цены</a></li>
 						</ul>
 					</aside>
 					<div class="content-holder">
-						<div class="content-box">
+						<div class="content-box" id="container1">
 							<div class="clear">
 								<div class="text-content">
 									<h2>Рабочие языки</h2>
@@ -162,7 +165,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container2">
 							<h2>Специализация в переводе</h2>
 							<div class="clear">
 								<div class="text-content">
@@ -191,7 +194,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container3">
 							<h2>Сложность тематики</h2>
 							<div class="clear">
 								<div class="text-content">
@@ -211,7 +214,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container4">
 							<h2>Как происходит работа с заказом</h2>
 							<div class="clear">
 								<div class="text-content">
@@ -277,7 +280,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container5">
 							<h2>Цены</h2>
 							<div class="clear">
 								<div class="text-content">

@@ -5,6 +5,9 @@
 	<title>Толмач бюро переводов</title>
 	<link rel="stylesheet" href="css/all.css" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<!--[if lte IE 8]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
 	<!--[if gte IE 9]>
@@ -88,17 +91,17 @@
 		</div>
 		<div class="main-content">
 			<div class="container">
-				<div class="clear">
-					<aside class="aside">
+				<div class="clear stick-parent">
+					<aside class="aside stick">
 						<ul class="side-menu">
-							<li><a href="#">Общая информация</a></li>
-							<li><a href="#">Распространённые документы</a></li>
-							<li><a href="#">Как происходит работа с заказом </a></li>
-							<li><a href="#">Цены</a></li>
+							<li class="active"><a href="#container1">Общая информация</a></li>
+							<li><a href="#container2">Распространённые документы</a></li>
+							<li><a href="#container3">Как происходит работа с заказом </a></li>
+							<li><a href="#container4">Цены</a></li>
 						</ul>
 					</aside>
 					<div class="content-holder">
-						<div class="content-box clear">
+						<div class="content-box clear" id="container1">
 							<div class="text-content">
 								<div class="box-description">Выезжая за границу на учебу, ПМЖ или с целью получения новой работы, заключения брака, отдыха или по другой причине, вы непременно столкнетесь с необходимостью перевода документов. Чтобы по прибытии в страну ваши документы были приняты и признаны официальными органами власти, в большинстве случаев требуется не только перевод, но и <a href="#">нотариальное заверение перевода</a>, проставление штампа <a href="#">«Апостиль»</a> или прохождение процедуры консульской <a href="#">легализации</a>. </div>
 								<p>Бюро переводов «ТОЛМАЧ» успешно занимается переводом личных документов с 1997 года. </p>
@@ -115,7 +118,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box clear">
+						<div class="content-box clear" id="container2">
 							<div class="text-content">
 								<h2>распространённые документы</h2>
 								<ul class="doc-list">
@@ -133,11 +136,11 @@
 									</li>
 									<li>
 										<h5>Дипломы, аттестаты, зачётные книжки, трудовые книжки, военные билеты</h5>
-										Для проживания, обучения, трудоустройства за границей 
+										Для проживания, обучения, трудоустройства за границей
 									</li>
 									<li>
 										<h5>Резюме, рекомендательные письма</h5>
-										Для проживания, обучения, трудоустройства за границей 
+										Для проживания, обучения, трудоустройства за границей
 									</li>
 									<li>
 										<h5>Справки об отсутствии судимости</h5>
@@ -161,7 +164,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="content-box clear">
+						<div class="content-box clear" id="container3">
 							<div class="text-content">
 								<h2>Как происходит работа с заказом</h2>
 								<ul class="step-list">
@@ -209,7 +212,7 @@
 								<p>* Данное руководство действительно для физических лиц. Юридическим лицам все услуги предоставляются в соответствии с согласованными положениями Договора о лингвистическом сопровождении.</p>
 							</div>
 						</div>
-						<div class="content-box clear">
+						<div class="content-box clear" id="container4">
 							<div class="text-content">
 								<h2>Цены</h2>
 								<h3>английский, немецкий, французский, испанский, итальянский, португальский</h3>

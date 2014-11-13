@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="css/all.css" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/icheck.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<!--[if lte IE 8]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
 	<!--[if gte IE 9]>
@@ -89,18 +92,18 @@
 		</div>
 		<div class="main-content">
 			<div class="container">
-				<div class="clear">
-					<aside class="aside">
+				<div class="clear stick-parent">
+					<aside class="aside stick">
 						<ul class="side-menu">
-							<li><a href="#">Легализация</a></li>
-							<li><a href="#">Апостиль</a></li>
+							<li class="active"><a href="#container1">Легализация</a></li>
+							<li><a href="#container2">Апостиль</a></li>
 						</ul>
 					</aside>
 					<div class="content-holder">
 						<div class="content-box">
 							<p>Выезжая за границу с целью получения образования, новой работы, открытия представительства своей компании, заключения брака, или по другой причине, вы непременно столкнетесь с необходимостью оформления и сбора огромного количества различных документов. А по прибытии за рубеж многие с огорчением обнаруживают: собранные с большим трудом документы в данной стране не признаются — требуется их легализация. Планы получить престижный диплом, устроиться на работу, зарегистрировать компанию или представительство, узаконить отношения с избранником или избранницей если и не рушатся, то меняются не в пользу благополучного исхода.</p>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container1">
 							<h2>Легализация</h2>
 							<div class="clear">
 								<div class="text-content">
@@ -149,7 +152,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="content-box">
+						<div class="content-box" id="container2">
 							<h2>апостиль</h2>
 							<div class="clear">
 								<div class="text-content">
