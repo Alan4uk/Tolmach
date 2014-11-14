@@ -16,7 +16,7 @@ $(document).ready(function(){
 			},
 			"close":function(){}
 		}).popup({
-			"opener":".promo-list > li > a",
+			"opener":".promo-list > li > a, .link-order-translate",
 			"popup_holder":"#order-popup"
 		}).popup({
 			"opener":".link-feedback",
@@ -77,12 +77,12 @@ $(document).ready(function(){
 	if ($('div').is('.question-form-holder')) {
 		$('.question-form-holder .answer.thanks').hide();
 		(function validation(){
-			var form=$('.custom-form');
+			var form=$('.question-form-holder .custom-form');
 			form.each(function(){
 				var _inputName=$(this).find('[name=text-name]'),
 				_inputEmail=$(this).find('[name=text-email]'),
 				_inputText=$(this).find('[name=text-text]'),
-				_this = $('.custom-form');
+				_this = $('.question-form-holder .custom-form');
 				_inputName.blur(function(){
 					var val=$(this).val(),
 					_this=$(this);

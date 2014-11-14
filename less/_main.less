@@ -1,10 +1,14 @@
 @import "_reset.less";
+html {
+	height: 100%;
+}
 body {
 	margin: 0;
 	color: @main-color;
 	font: 14px/17px @regular;
 	background: @main-bg;
 	min-width: 960px;
+	height: 100%;
 }
 img {
 	border-style: none;
@@ -69,6 +73,7 @@ p {
 #wrapper {
 	overflow: hidden;
 	position: relative;
+	min-height: 100%;
 }
 #header {
 	color: #fff;
@@ -135,6 +140,9 @@ p {
 	z-index: 5;
 	background: #fff;
 	padding: 26px 0 25px;
+	&:last-child {
+		padding-bottom: 200px !important;
+	}
 	&:before{
 		content: '';
 		position: absolute;
@@ -155,6 +163,8 @@ p {
 	position: relative;
 	z-index: 7;
 	height: 177px;
+	margin-top: -177px;
+	background: @red-bg;
 	&:after{
 		content: '';
 		background: @red-bg;
@@ -162,7 +172,7 @@ p {
 		z-index: -1;
 		top: -30px;
 		left: 0;
-		bottom: -50px;
+		bottom: 40px;
 		right: 0;
 		 -webkit-transform: rotate(2deg) skewX(2deg) skewY(0deg);
 	     -moz-transform: rotate(2deg) skewX(2deg) skewY(0deg);
@@ -642,7 +652,7 @@ button.btn {
 	.slide {
 		float: left;
 		width: 140px;
-		margin: 0 14px;
+		padding: 0 14px;
 		img{
 			vertical-align: top;
 		}
@@ -2042,6 +2052,7 @@ div.radio.disabled + label {
 	     -o-transform: rotate(-2.4deg);
 	        transform: rotate(-2.4deg);
 }
-
-
+.custom-form .error {
+	border-color: #f00;
+}
 
