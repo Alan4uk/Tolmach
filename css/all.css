@@ -1521,8 +1521,8 @@ button.btn {
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-transform: rotate(-1.4deg);
-  -ms-transform: rotate(-1.4deg);
+  -webkit-transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
+  -ms-transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
   transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
 }
 
@@ -1535,8 +1535,8 @@ button.btn {
   left: 0;
   top: 0;
   right: 0;
-  -webkit-transform: rotate(-1.4deg);
-  -ms-transform: rotate(-1.4deg);
+  -webkit-transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
+  -ms-transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
   transform: rotate(-1.4deg) skewX(-1.4deg) skewY(0deg);
 }
 
