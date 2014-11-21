@@ -1651,7 +1651,8 @@ div.radio.disabled + label {
 }
 
 .block-checkbox.active {
-  background: #ebebeb;
+  background: #ef4036;
+  color: #fff;
 }
 
 .block-checkbox.active:after {
@@ -1696,7 +1697,7 @@ div.radio.disabled + label {
   left: 0;
   width: 50px;
   height: 100%;
-  background: url(../images/ico26.png) no-repeat 50% 50%;
+  background: url(../images/ico26-w.png) no-repeat 50% 50%;
   display: none;
 }
 
