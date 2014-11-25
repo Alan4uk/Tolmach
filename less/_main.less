@@ -1431,33 +1431,52 @@ div.radio.disabled + label {
 		display: none;
 		opacity: 0;
 	}
-	&.hover{
-		background: #ebebeb;
-	}
 	&.active {
 		background: @link-color;
 		color: #fff;
+		border-color: transparent;
 		&:after{
 			display: block;
 		}
-		&.hover{
-			color: #464646;
-			&:after{
-				display: none;
+		// &.hover{
+		// 	color: #464646;
+		// 	&:after{
+		// 		display: none;
+		// 	}
+		// 	&:before {
+		// 		display: block;
+		// 	}
+		// 	.ico {
+		// 		img{
+		// 			opacity: 0;
+		// 		}
+		// 	}
+		// }
+		.ico {
+			img{
+				opacity: 0;
 			}
-			&:before {
-				display: block;
-			}
-			.ico {
-				img{
-					opacity: 0;
-				}
-			}
+		}
+	}
+	&.hover{
+		background: #ebebeb;
+		border-color: #cccccc;
+		&:after{
+			display: block;
+			background: url(../images/ico26.png) no-repeat 50% 50%;
 		}
 		.ico {
 			img{
 				opacity: 0;
 			}
+		}
+	}
+	&.hover.active{
+		background: #ebebeb;
+		color: #464646;
+		&:after{
+			background: url(../images/ico25.png) no-repeat 50% 50%;
+			display: block;
 		}
 	}
 	&:before {

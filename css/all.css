@@ -1646,37 +1646,42 @@ div.radio.disabled + label {
   opacity: 0;
 }
 
-.block-checkbox.hover {
-  background: #ebebeb;
-}
-
 .block-checkbox.active {
   background: #ef4036;
   color: #fff;
+  border-color: transparent;
 }
 
 .block-checkbox.active:after {
   display: block;
 }
 
-.block-checkbox.active.hover {
+.block-checkbox.active .ico img {
+  opacity: 0;
+}
+
+.block-checkbox.hover {
+  background: #ebebeb;
+  border-color: #cccccc;
+}
+
+.block-checkbox.hover:after {
+  display: block;
+  background: url(../images/ico26.png) no-repeat 50% 50%;
+}
+
+.block-checkbox.hover .ico img {
+  opacity: 0;
+}
+
+.block-checkbox.hover.active {
+  background: #ebebeb;
   color: #464646;
 }
 
-.block-checkbox.active.hover:after {
-  display: none;
-}
-
-.block-checkbox.active.hover:before {
+.block-checkbox.hover.active:after {
+  background: url(../images/ico25.png) no-repeat 50% 50%;
   display: block;
-}
-
-.block-checkbox.active.hover .ico img {
-  opacity: 0;
-}
-
-.block-checkbox.active .ico img {
-  opacity: 0;
 }
 
 .block-checkbox:before {
